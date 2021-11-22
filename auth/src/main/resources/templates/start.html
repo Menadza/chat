@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="/script.js"></script>
+</head>
+<script>
+    window.onload = connect();
+</script>
+<body>
+<div class="chat_window">
+    <div class="top_menu">
+        <div class="title">Chat for many</div>
+    </div>
+    <ul class="messages"></ul>
+    <div class="bottom_wrapper clearfix">
+        <div class="message_input_wrapper">
+            <input id="message_input_value" class="message_input" placeholder="Type message here..." />
+        </div>
+    </div>
+</div>
+<div id="message_template" class="message_template">
+    <li class="message"><div class="avatar"></div>
+        <div class="text_wrapper">
+            <div class="text"></div>
+        </div></li>
+</div>
+</body>
+</html>
